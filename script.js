@@ -26,12 +26,14 @@ console.log(lastElementInArray(["Haas", "Cavia", "Kip", "Schildpad"]));
 
 // Deel E
 const presidents = ["Trump", "Obama", "Bush", "Clinton"];
-const impeachTrumpSlice = function (array) {
-    return presidents.slice(1);
-}
-const impeachTrumpSplice = function (array) {
-    return presidents.splice(1);
-}
+const impeachTrumpSlice = () => {
+    let impeach1 = presidents.slice(1);
+    return impeach1;
+};
+const impeachTrumpSplice = () => {
+    let impeach = presidents.splice(1, 4);
+    return impeach;
+};
 console.log(impeachTrumpSlice(presidents)); // ["Obama", "Bush", "Clinton"]
 console.log(impeachTrumpSplice(presidents)); // ["Obama", "Bush", "Clinton"]
 
